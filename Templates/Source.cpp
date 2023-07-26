@@ -15,7 +15,7 @@ T half(T number)
 template <typename T>
 int half(T number)
 {
-	
+	return round(static_cast<double>(number / 2));
 }
 
 int main()
