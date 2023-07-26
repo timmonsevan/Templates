@@ -13,20 +13,20 @@ T half(T number)
 }
 
 template <typename T>
-int intHalf(T number)
+T half(int number)
 {
 	return round(static_cast<double>(number / 2));
 }
 
 int main()
 {
-	double a = 6.66;
-	float b = 14.42;
+	double a = 7.0;
+	float b = 13.0;
 	int c = 9;
 
 	cout << half(a) << endl;
 	cout << half(b) << endl;
-	cout << intHalf(c) << endl;
+	cout << half(c) << endl;
 
 
 	return 0;
